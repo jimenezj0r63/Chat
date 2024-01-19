@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation Page</title>
+  <style>
+    html {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    span {
+      margin: 0;
+      padding: 0;
+      font-size: 25px;
+    }
+
+    body {
+      background: black;
+      font-family: helvetica;
+      color: white;
+    }
+
+    i {
+      margin-right: 4px;
+      line-height: 0.25;
+    }
+
+    #linkanimation {
+      text-decoration: none;
+      color: white;
+      position: relative;
+    }
+
+    #linkanimation::before {
+      content: "";
+      background: linear-gradient(to right, rgb(255, 255, 255) 45%, rgba(255, 255, 255, 0.3) 55%);
+      background-size: 220% 100%;
+      background-position: 100% 50%;
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-repeat: no-repeat;
+      transition: .3s ease-out;
+    }
+
+    #linkanimation:hover::before {
+      background: linear-gradient(to right, rgb(255, 255, 255) 45%, rgba(255, 255, 255, 0.3) 55%);
+      background-size: 220% 100%;
+      background-position: 0% 50%;
+      transition: .3s ease-out;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to Our DallHam Ai Version 3</h1>
+  </header>
+  <main>
+    <script src="https://kit.fontawesome.com/e00711ebdc.js" crossorigin="anonymous"></script>
+
+    <!-- couldn't upload thinner arrow because its part of fontawesome pro-->
+
+    <span><i class="fa-solid fa-arrow-right"></i><a href="https://doc-dallham.oneoftheprojects.com/" id="linkanimation"
+        target="_blank">Access Documentation Now</a> </span>
+  </main>
+</body>
+
+</html>
